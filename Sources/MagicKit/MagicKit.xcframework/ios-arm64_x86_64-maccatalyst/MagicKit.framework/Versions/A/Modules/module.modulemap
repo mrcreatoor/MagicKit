@@ -1,0 +1,11 @@
+framework module MagicKit {
+  umbrella header "MagicKit.h"
+
+  export *
+  module * { export * }
+}
+
+module MagicKit.Swift {
+  header "MagicKit-Swift.h"
+  requires objc
+}

@@ -1,0 +1,127 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target x86_64-apple-ios16.2-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MagicKit
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Accelerate
+import Foundation
+@_exported import MagicKit
+import MetalKit
+import MetalPerformanceShaders
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import simd
+@available(iOS 14.0, *)
+extension SwiftUI.View {
+  public func magic<T>(transition: MagicKit.MagicTransition, duration: Foundation.TimeInterval = 1, show: SwiftUI.Binding<Swift.Bool>, @SwiftUI.ViewBuilder _ content: @escaping () -> T) -> some SwiftUI.View where T : SwiftUI.View
+  
+}
+public enum MagicTransition {
+  case cannabisleaf
+  case fade
+  case displacement(strength: Swift.Float, mask: MagicKit.Mask)
+  case doorway(depth: Swift.Float, reflection: Swift.Float, perspective: Swift.Float)
+  case circleOpen(smoothness: Swift.Float, opening: Swift.Bool)
+  case perlin(scale: Swift.Float, seed: Swift.Float, smoothness: Swift.Float)
+  case bookFlip(inverted: Swift.Bool)
+  case glitchMemories
+  case colorPhase(from: SwiftUI.Color, to: SwiftUI.Color)
+  case crazyParametricFun(x: Swift.Float, y: Swift.Float, smoothness: Swift.Float, amplitude: Swift.Float)
+  case undulatingBurnOut(color: SwiftUI.Color, smoothness: Swift.Float, anchor: SwiftUI.UnitPoint)
+  case overexposure(strength: Swift.Float)
+  case burn(color: SwiftUI.Color)
+  case windowSlice(count: Swift.Float, smoothness: Swift.Float)
+  case hexagonalize(steps: Swift.Int, hexagonsPerRow: Swift.Float)
+  case bowTieVertical
+  case kaleidoScope(angle: Swift.Float, speed: Swift.Float, power: Swift.Float)
+  case dreamy
+  case zoomInCircles
+  case rightLeft
+  case stereoViewer(cornerRadius: Swift.Float, scale: Swift.Float)
+  case glitchDisplace
+  case squaresWire(direction: SwiftUI.UnitPoint, wiresPerRow: Swift.Int, wiresPerColumn: Swift.Int, smoothness: Swift.Float)
+  case rotate
+  case swirl
+  case heart
+  case polar(segments: Swift.Int)
+  case wipe(edge: SwiftUI.Edge)
+  case radial(smoothness: Swift.Float)
+  case mosaic(cellX: Swift.Int, cellY: Swift.Int)
+  case circleCrop(backgroundColor: SwiftUI.Color)
+  case pixelize(pixelsPerRow: Swift.Int, pixelsPerColumn: Swift.Int, steps: Swift.Int)
+  case crossHatch(threshold: Swift.Float, fadeEdge: Swift.Float, anchor: SwiftUI.UnitPoint)
+  case swap(depth: Swift.Float, reflection: Swift.Float, perspective: Swift.Float)
+  case rotateScaleFade(scale: Swift.Float, rotations: Swift.Float, backgroundColor: SwiftUI.Color, anchor: SwiftUI.UnitPoint)
+  case cube(persp: Swift.Float, unzoom: Swift.Float, reflection: Swift.Float, floating: Swift.Float)
+  case multiplyBlend
+  case tangentMotionBlur
+  case butterflyWaveScrawler(colorSeparation: Swift.Float, amplitude: Swift.Float, waves: Swift.Float)
+  case squeeze(colorSeparation: Swift.Float)
+  case linearBlur(intensity: Swift.Float)
+  case fadeInWipeLeft
+  case fadeInWipeUp
+  case mosaicYueDev(mosaicNum: Swift.Float)
+  case bounce(bounces: Swift.Float, shadowColor: SwiftUI.Color, shadowRadius: Swift.Float)
+  case colorDistance(power: Swift.Float)
+  case fadeColor(color: SwiftUI.Color, colorPhase: Swift.Float)
+  case circle(anchor: SwiftUI.UnitPoint, backgroundColor: SwiftUI.Color)
+  case randomSquares(smoothness: Swift.Float, squaresPerRow: Swift.Int, squaresPerColumn: Swift.Int)
+  case gridFlip(cellsPerRow: Swift.Int, cellsPerColumn: Swift.Int, delay: Swift.Float, spacing: Swift.Float, backgroundColor: SwiftUI.Color, randomness: Swift.Float)
+  case wind(strength: Swift.Float)
+  case bowTieHorizontal
+  case bottomTop
+  case ripple(speed: Swift.Float, amplitude: Swift.Float)
+  case dreamyZoom(rotation: Swift.Float, scale: Swift.Float)
+  case directionalEasing(start: SwiftUI.UnitPoint)
+  case scaleIn
+  case pageCurl(inverted: Swift.Bool)
+  case tvStatic(strength: Swift.Float)
+  case directionalWarp(start: SwiftUI.UnitPoint)
+  case powerKaleido(scale: Swift.Float, z: Swift.Float, speed: Swift.Float)
+  case waterDrop(speed: Swift.Float, amplitude: Swift.Float)
+  case coordFromIn
+  case crossZoom(strength: Swift.Float)
+  case fadeGrayscale(intensity: Swift.Float)
+  case angular(startingAngle: Swift.Float)
+  case luminanceMelt(fromTop: Swift.Bool, above: Swift.Bool, threshold: Swift.Float)
+  case crossWarp
+  case directional(direction: SwiftUI.UnitPoint)
+  case doomScreen(dripScale: Swift.Float, bars: Swift.Int, noise: Swift.Float, frequency: Swift.Float, amplitude: Swift.Float)
+  case simpleZoom(zoomQuickness: Swift.Float)
+  case pinwheel(speed: Swift.Float)
+  case windowBlinds
+  case directionalWipe(direction: SwiftUI.UnitPoint, smoothness: Swift.Float)
+  case flyeye(colorSeparation: Swift.Float, zoom: Swift.Float, size: Swift.Float)
+  case polkaDotsCurtain(dots: Swift.Float, anchor: SwiftUI.UnitPoint)
+  case morph(strength: Swift.Float)
+  case randomNoise
+}
+extension MagicKit.MagicTransition : Swift.RawRepresentable {
+  public var rawValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+}
+public enum Mask : Swift.String {
+  case fadeLinear
+  case conical
+  case fadeConical
+  case crystal
+  case linear
+  case radial
+  case largeSpiral
+  case mediumSpiral
+  case regular
+  case square
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension MagicKit.Mask : Swift.Equatable {}
+extension MagicKit.Mask : Swift.Hashable {}
+extension MagicKit.Mask : Swift.RawRepresentable {}
