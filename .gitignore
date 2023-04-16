@@ -1,0 +1,62 @@
+
+## User settings
+xcuserdata/
+
+## Xcode 8 and earlier
+*.xcscmblueprint
+*.xccheckout
+
+# .pbxuser: http://lists.apple.com/archives/xcode-users/2004/Jan/msg00193.html
+*.pbxuser
+
+# .mode1v3: http://lists.apple.com/archives/xcode-users/2007/Oct/msg00465.html
+*.mode1v3
+
+# .mode2v3: http://lists.apple.com/archives/xcode-users/2007/Oct/msg00465.html
+*.mode2v3
+
+# .perspectivev3: http://stackoverflow.com/questions/5223297/xcode-projects-what-is-a-perspectivev3-file
+*.perspectivev3
+
+#    NB: also, whitelist the default ones, some projects need to use these
+!default.pbxuser
+!default.mode1v3
+!default.mode2v3
+!default.perspectivev3
+
+####
+# Xcode build files -
+#
+# NB: slash on the end, so we only remove the FOLDER, not any files that were badly named "DerivedData"
+DerivedData/
+
+# NB: slash on the end, so we only remove the FOLDER, not any files that were badly named "build"
+build/
+
+####
+# Xcode temporary files that should never be committed
+# 
+# NB: NIB/XIB files still exist even on Storyboard projects, so we want this...
+*~.nib
+
+# Pod files
+Pods/
+Podfile.lock
+
+#####
+# OS X temporary files that should never be committed
+#
+# c.f. http://www.westwind.com/reference/os-x/invisibles.html
+
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+# c.f. http://www.westwind.com/reference/os-x/invisibles.html
+.Trashes
+
+# c.f. http://www.westwind.com/reference/os-x/invisibles.html
+*.swp
+
+# Thumbnails
+._*
