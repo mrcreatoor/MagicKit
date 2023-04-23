@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/mrcreatoor/MagicKit/main/Asset/banner.png">
+<img src="https://raw.githubusercontent.com/mrcreatoor/MagicKit/main/assets/banner.png">
 
 # MagicKit
 
@@ -6,15 +6,15 @@ MagicKit is a lightweight and easy-to-use framework for adding stunning transiti
 
 With MagicKit, you can create beautiful and dynamic user interfaces that will captivate your users and enhance their experience.
 
-[![MagicKit Introduction Video](https://raw.githubusercontent.com/mrcreatoor/MagicKit/main/Asset/thumb.jpeg)](https://www.youtube.com/watch?v=eV7rRSJzevA)
+[![MagicKit Introduction Video](https://raw.githubusercontent.com/mrcreatoor/MagicKit/main/assets/thumb.jpeg)](https://www.youtube.com/watch?v=eV7rRSJzevA)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-black.svg)](https://opensource.org/licenses/MIT)
 
 ## Features
 
 - Easy to use
-- Multiple built-in transition effects to choose from
-- Fully customizable transition
+- Multiple built-in transitions to choose from
+- Fully customizable transitions
 - Lightweight and optimized for performance
 
 ## Requirements
@@ -86,4 +86,4 @@ MagicKit is available under the MIT license. See the [LICENCE](https://raw.githu
 
 This framework makes use of the amazing [GL-Transitions](https://github.com/gl-transitions/gl-transitions) library, which provides a collection of beautiful and highly customizable transitions. The library is created and maintained by [contributors](https://github.com/gl-transitions/gl-transitions/graphs/contributors).
 
-We would like to thank the GL-Transitions team for their hard work and dedication in creating such a wonderful library and making it available to the community. We highly recommend checking out the original library and showing your support by giving it a star on [GitHub](https://github.com/gl-transitions/gl-transitions).
+We would like to thank the [GL-Transitions](https://github.com/gl-transitions/gl-transitions) team for their hard work and dedication in creating such a wonderful library and making it available to the community. We highly recommend checking out the original library and showing your support by giving it a star on [GitHub](https://github.com/gl-transitions/gl-transitions).
