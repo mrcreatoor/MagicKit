@@ -8,6 +8,9 @@ With MagicKit, you can create beautiful and dynamic user interfaces that will ca
 
 [![MagicKit Introduction Video](https://raw.githubusercontent.com/mrcreatoor/MagicKit/main/assets/thumb.jpeg)](https://www.youtube.com/watch?v=eV7rRSJzevA)
 
+
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fmrcreatoor%2FMagicKit%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/mrcreatoor/MagicKit)
+[![SPM Compatible](https://img.shields.io/badge/SwiftPM-Compatible-brightgreen.svg)](https://swiftpackageindex.com/mrcreatoor/MagicKit)
 [![License: MIT](https://img.shields.io/badge/License-MIT-black.svg)](https://opensource.org/licenses/MIT)
 
 ## Features
@@ -21,7 +24,7 @@ With MagicKit, you can create beautiful and dynamic user interfaces that will ca
 
 * iOS 14+
 * Xcode 12+
-* Swift 5.3+
+* Swift 5.7+
 
 ## Installation
 
