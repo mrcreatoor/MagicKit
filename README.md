@@ -8,8 +8,8 @@ With MagicKit, you can create beautiful and dynamic user interfaces that will ca
 
 [![MagicKit Introduction Video](https://raw.githubusercontent.com/mrcreatoor/MagicKit/main/assets/thumb.jpeg)](https://www.youtube.com/watch?v=eV7rRSJzevA)
 
-
 [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fmrcreatoor%2FMagicKit%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/mrcreatoor/MagicKit)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fmrcreatoor%2FMagicKit%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/mrcreatoor/MagicKit)
 [![SPM Compatible](https://img.shields.io/badge/SwiftPM-Compatible-brightgreen.svg)](https://swiftpackageindex.com/mrcreatoor/MagicKit)
 [![License: MIT](https://img.shields.io/badge/License-MIT-black.svg)](https://opensource.org/licenses/MIT)
 
@@ -70,6 +70,13 @@ import MagicKit
        }
    }
 ```
+## Examples
+
+To try out the MagicKit example:
+- Clone the repo `https://github.com/mrcreatoor/MagicKit.git`
+- Open `Example/Example.xcodeproj` in the Xcode
+- Run it!
+
 ## Documentation
 
 For more detailed information on how to use MagicKit in your projects, check out our [documentation](https://mrcreatoor.github.io/MagicKit/documentation/magickit).

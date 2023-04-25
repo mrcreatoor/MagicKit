@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "magickit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mrcreatoor/MagicKit",
+      "state" : {
+        "revision" : "b14d79557e8a1487e05734fb9ddbb244039618e4",
+        "version" : "0.0.1"
+      }
+    }
+  ],
+  "version" : 2
+}
